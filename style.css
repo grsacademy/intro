@@ -329,6 +329,7 @@ footer {
     color: #fff;
 }
 .card-header h3 {
+	height: 30px;
     font-size: 1.3rem;
     font-weight: 500;
     margin: 0;
@@ -597,5 +598,72 @@ footer {
     }
     .section-title {
         font-size: 2rem;
+    }
+}
+.header-logo {
+    height: 35px; /* 글자 크기에 맞춰 로고 높이 조절 */
+    vertical-align: middle; /* 글자와 수평을 맞춤 */
+    margin-left: 4px; /* 글자와 로고 사이의 간격 */
+    display: inline-block;
+}
+/* 05 항목을 넓게 쓰기 위한 설정 */
+.full-width {
+    grid-column: 1 / -1; /* 그리드 레이아웃인 경우 전체 너비 사용 */
+    margin-top: 20px;
+}
+
+.education-tables {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.info-sub-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.table-brand-header {
+    background-color: #005bac; /* 이미지의 파란색 계열 */
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.table-sub-header {
+    background-color: #fdf2e9; /* 이미지의 연한 베이지색 */
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-sub-table th, .info-sub-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.highlight-red {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.info-sub-table small {
+    color: #666;
+    font-weight: normal;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+    .info-sub-table {
+        font-size: 0.85rem;
     }
 }
